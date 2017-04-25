@@ -11,6 +11,9 @@ android:
       # Unhash the below line for Google Play Service
       # -extra-google-m2repository
 
+before-install:
+  - chmod +x gradlew
+
 script:
    - ./gradlew build connectedCheck
 
