@@ -23,7 +23,6 @@ android {
             applicationIdSuffix = ".mock"
         }
         prod{
-
         }
     }
 }
