@@ -1,2 +1,2 @@
 # rent-a-game
-A simple android app that imitates a game rental shop, Allowing users to search for games and receiving notifications when a game is available for hire in a store.
+A simple android app for a dummy game rental shop that allows users to search for games and recieve notifications when a game is available for hire in a store.
