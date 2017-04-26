@@ -14,19 +14,8 @@ android:
 
       # Unhash the below line for Google Play Service
       # -extra-google-m2repository
-
-env:
-  global:
-    -ADB_INSTALL_TIMEOUT=8
-
-#Emulator management: Create, Start and Wait
-before_script:
-  - echo yes | android create avd --force -n test -t android-25 --abi armeabi-v7a
-  - emulator -avd test -no-skin -no-audio -no-window &
-  - android-wait-for-emulator
-  - adb shell input keyevent 82 &
 script:
-   - ./gradlew build connectedCheck
+  - ./gradlew build
 
 jdk:
   - oraclejdk8  # lamba expression support
